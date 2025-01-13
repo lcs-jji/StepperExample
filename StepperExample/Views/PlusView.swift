@@ -44,7 +44,7 @@ struct PlusView: View {
             }
             
             Stepper(value: $base2, label: {
-                Text("select first number")
+                Text("select second number")
             })
             
             HStack{
