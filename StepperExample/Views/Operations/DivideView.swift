@@ -7,14 +7,14 @@
 
 import SwiftUI
  
-struct DevideView: View {
+struct DivideView: View {
     
     // MARK: Stored properties
     @State var base1: Int = 1
     @State var base2: Int = 1
     
     // MARK: Computed properties
-    var devided: Int {
+    var divided: Int {
         return base1 / base2
     }
     
@@ -55,7 +55,7 @@ struct DevideView: View {
             
             HStack{
                 Spacer()
-                Text("\(devided)")
+                Text("\(divided)")
                     .font(.system(size: 96))
             }
         }
@@ -64,5 +64,5 @@ struct DevideView: View {
 }
  
 #Preview {
-    DevideView()
+    DivideView()
 }
