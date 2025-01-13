@@ -24,7 +24,7 @@ struct ContentView: View {
             
             HStack(alignment: .top) {
  
-                Text("\(base)")
+                Text("(\(base))")
                     .font(.system(size: 96))
  
                 Text("2")
@@ -36,6 +36,8 @@ struct ContentView: View {
                 Text("\(squared)")
                     .font(.system(size: 96))
             }
+            .lineLimit(1)
+            .minimumScaleFactor(0.5)
             
             Stepper(value: $base, label: {
                 Text("base")
